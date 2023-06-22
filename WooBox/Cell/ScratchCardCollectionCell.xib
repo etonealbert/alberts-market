@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ScratchCardCollectionCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwr-0M-TrT">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="131"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6YN-uq-Few">
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="131"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.25882352939999997" blue="0.32549019610000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="srachView" translatesAutoresizingMaskIntoConstraints="NO" id="Ksn-bG-LMa">
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="131"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.50588235290000005" blue="0.52156862749999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.6705882352941176" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ksn-bG-LMa" firstAttribute="top" secondItem="Cwr-0M-TrT" secondAttribute="top" id="3sb-Xc-iCY"/>
+                            <constraint firstItem="Ksn-bG-LMa" firstAttribute="leading" secondItem="Cwr-0M-TrT" secondAttribute="leading" id="6cb-Dv-88R"/>
+                            <constraint firstAttribute="trailing" secondItem="Ksn-bG-LMa" secondAttribute="trailing" id="Bc2-BU-rk1"/>
+                            <constraint firstItem="Ksn-bG-LMa" firstAttribute="leading" secondItem="Cwr-0M-TrT" secondAttribute="leading" id="Fmg-Gw-eep"/>
+                            <constraint firstItem="6YN-uq-Few" firstAttribute="leading" secondItem="Cwr-0M-TrT" secondAttribute="leading" id="Pnr-GZ-xh0"/>
+                            <constraint firstItem="Ksn-bG-LMa" firstAttribute="top" secondItem="Cwr-0M-TrT" secondAttribute="top" id="QYQ-nI-LhT"/>
+                            <constraint firstAttribute="bottom" secondItem="Ksn-bG-LMa" secondAttribute="bottom" id="ZgZ-3Q-Nzs"/>
+                            <constraint firstAttribute="trailing" secondItem="6YN-uq-Few" secondAttribute="trailing" id="agP-bD-sDA"/>
+                            <constraint firstAttribute="trailing" secondItem="Ksn-bG-LMa" secondAttribute="trailing" id="hAj-kY-9Hc"/>
+                            <constraint firstItem="6YN-uq-Few" firstAttribute="top" secondItem="Cwr-0M-TrT" secondAttribute="top" id="k5C-PQ-uPT"/>
+                            <constraint firstAttribute="bottom" secondItem="6YN-uq-Few" secondAttribute="bottom" id="otn-sk-uft"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cwr-0M-TrT" secondAttribute="trailing" id="LQd-20-b7b"/>
+                <constraint firstItem="Cwr-0M-TrT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aEJ-2b-7oG"/>
+                <constraint firstItem="Cwr-0M-TrT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qv5-UK-1ha"/>
+                <constraint firstAttribute="bottom" secondItem="Cwr-0M-TrT" secondAttribute="bottom" id="u1J-C1-cIN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="127" height="131"/>
+            <connections>
+                <outlet property="imgCoupon" destination="6YN-uq-Few" id="Yje-sx-Qxe"/>
+                <outlet property="imgMask" destination="Ksn-bG-LMa" id="Mtw-tE-TZk"/>
+                <outlet property="vwScrachCard" destination="Cwr-0M-TrT" id="OOM-bB-v1O"/>
+            </connections>
+            <point key="canvasLocation" x="156.5625" y="135.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="srachView" width="600" height="527"/>
+    </resources>
+</document>

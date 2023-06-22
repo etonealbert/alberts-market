@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="WalkThroughCollectionCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JmD-Hq-RpM">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="256"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkThrough" translatesAutoresizingMaskIntoConstraints="NO" id="I6F-of-dOE">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="256"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I6F-of-dOE" secondAttribute="trailing" id="8gI-0Q-mgt"/>
+                            <constraint firstItem="I6F-of-dOE" firstAttribute="leading" secondItem="JmD-Hq-RpM" secondAttribute="leading" id="9Ll-bX-XgS"/>
+                            <constraint firstItem="I6F-of-dOE" firstAttribute="top" secondItem="JmD-Hq-RpM" secondAttribute="top" id="eZ5-Uu-sR8"/>
+                            <constraint firstAttribute="bottom" secondItem="I6F-of-dOE" secondAttribute="bottom" id="ver-3j-G4F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JmD-Hq-RpM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BBS-Sl-Cdn"/>
+                <constraint firstItem="JmD-Hq-RpM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bba-pJ-g1Y"/>
+                <constraint firstAttribute="trailing" secondItem="JmD-Hq-RpM" secondAttribute="trailing" id="cN0-pr-SOG"/>
+                <constraint firstAttribute="bottom" secondItem="JmD-Hq-RpM" secondAttribute="bottom" id="lT0-an-Tjt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="250" height="256"/>
+            <connections>
+                <outlet property="imgWalkThrough" destination="I6F-of-dOE" id="PFD-M1-MvI"/>
+                <outlet property="vwImageBackground" destination="JmD-Hq-RpM" id="3Ik-eB-JRf"/>
+            </connections>
+            <point key="canvasLocation" x="276.81159420289856" y="201.5625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="walkThrough" width="867" height="1300"/>
+    </resources>
+</document>

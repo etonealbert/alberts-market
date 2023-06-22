@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SizeViewCell" id="gTV-IL-0wX" customClass="SizeViewCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="81" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="81" height="57"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROG-RW-eZP">
+                        <rect key="frame" x="0.0" y="0.0" width="81" height="57"/>
+                        <subviews>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcm-gu-fYA" customClass="ThemeButton">
+                                <rect key="frame" x="20.5" y="8.5" width="40" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICu-5G-WK4">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ICu-5G-WK4" firstAttribute="leading" secondItem="vcm-gu-fYA" secondAttribute="leading" id="SPj-9p-9QH"/>
+                                    <constraint firstAttribute="width" constant="40" id="WKh-Wc-dUu">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                    <constraint firstItem="ICu-5G-WK4" firstAttribute="top" secondItem="vcm-gu-fYA" secondAttribute="top" id="cb9-vL-0T7"/>
+                                    <constraint firstAttribute="bottom" secondItem="ICu-5G-WK4" secondAttribute="bottom" id="l6s-vh-BpO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ICu-5G-WK4" secondAttribute="trailing" id="yAG-Xm-w5R"/>
+                                    <constraint firstAttribute="height" constant="40" id="zND-HC-m2x">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vcm-gu-fYA" firstAttribute="centerX" secondItem="ROG-RW-eZP" secondAttribute="centerX" id="9nD-Z6-hf7"/>
+                            <constraint firstItem="vcm-gu-fYA" firstAttribute="centerY" secondItem="ROG-RW-eZP" secondAttribute="centerY" id="jAF-Gj-cyK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ROG-RW-eZP" secondAttribute="trailing" id="HmR-xt-nBl"/>
+                <constraint firstItem="ROG-RW-eZP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RHZ-kD-KKz"/>
+                <constraint firstItem="ROG-RW-eZP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UjK-Vi-Xmh"/>
+                <constraint firstAttribute="bottom" secondItem="ROG-RW-eZP" secondAttribute="bottom" id="bRU-gO-PKz"/>
+                <constraint firstItem="ROG-RW-eZP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ucC-8y-MFL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="81" height="57"/>
+            <connections>
+                <outlet property="lblSize" destination="ICu-5G-WK4" id="4fP-Rk-upA"/>
+                <outlet property="vwSize" destination="vcm-gu-fYA" id="bpw-hh-foZ"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="94.084821428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

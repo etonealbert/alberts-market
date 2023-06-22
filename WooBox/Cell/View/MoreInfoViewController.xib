@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreInfoViewController" customModule="WooBox" customModuleProvider="target">
+            <connections>
+                <outlet property="constraintTableHeight" destination="RM6-pU-rgS" id="XB6-dk-aVE"/>
+                <outlet property="tblMoreInfo" destination="IIr-AA-Yco" id="05P-UO-WDp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKC-fU-Fye">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IIr-AA-Yco">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="RM6-pU-rgS"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Shd-Ow-cLf"/>
+                                <outlet property="delegate" destination="-1" id="STa-aT-7fe"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="IIr-AA-Yco" firstAttribute="width" secondItem="zKC-fU-Fye" secondAttribute="width" id="9Wf-rA-O7E"/>
+                        <constraint firstItem="IIr-AA-Yco" firstAttribute="leading" secondItem="zKC-fU-Fye" secondAttribute="leading" id="H0k-Bh-38b"/>
+                        <constraint firstAttribute="bottom" secondItem="IIr-AA-Yco" secondAttribute="bottom" id="OQS-v2-cwc"/>
+                        <constraint firstAttribute="trailing" secondItem="IIr-AA-Yco" secondAttribute="trailing" id="hLe-vY-YqZ"/>
+                        <constraint firstItem="IIr-AA-Yco" firstAttribute="top" secondItem="zKC-fU-Fye" secondAttribute="top" id="v4t-Vb-2oV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zKC-fU-Fye" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NJN-F1-N3n"/>
+                <constraint firstItem="zKC-fU-Fye" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VtV-7G-LFK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zKC-fU-Fye" secondAttribute="bottom" id="hNR-1L-1Ay"/>
+                <constraint firstAttribute="trailing" secondItem="zKC-fU-Fye" secondAttribute="trailing" id="oyc-x1-UwQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

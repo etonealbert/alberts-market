@@ -1,0 +1,184 @@
+/* 
+  WooBoxLocalization.strings
+*/
+
+Home = "Accueil";
+Wishlist = "liste";
+Shooping_Cart = "shooping panier";
+Profile = "Profil";
+
+WooBox = "WooBox";
+Sign_In_With = "Se connecter avec";
+Change_Password = "Changer le mot de passe";
+Change_Now = "Change maintenant";
+Resend_code = "Renvoyer le code";
+Sign_In = "Se connecter";
+Sign_Up = "S'inscrire";
+Forgot = "Oublié ?";
+Enter_Email = "Entrer votre Email";
+Enter_Password = "Tapez votre mot de passe";
+Enter_First_Name = "Entrez votre prénom";
+Enter_Last_Name = "Entrez votre nom de Lase";
+Enter_Re_Password = "Entrez un nouveau mot de passe";
+Enter_Email_Username = "Entrez votre identifiant e-mail / nom d'utilisateur";
+
+Verify_Email = "Entrez le code pour vérifier votre e-mail";
+Mail_With_Verification_Code = "Nous vous avons envoyé mail avec le code de vérification To-";
+Verify = "Vérifier";
+
+My_Order = "Ma commande";
+Reward = "Récompense";
+Women = "Femmes";
+Men = "Hommes";
+Kids = "Des gamins";
+Sports = "Des sports";
+Camera = "Caméra";
+Account = "Compte";
+Settings = "Réglages";
+FAQ = "FAQ";
+Help = "Aidez-moi";
+Contact_Us = "Nous contacter";
+About_Us = "À propos de nous";
+Blog = "Blog";
+Logout = "Se déconnecter";
+Login = "S'identifier";
+Special_Offer = "Offre spéciale";
+Share_app = "Partager l'application";
+
+Recent_Search = "Recherche récente";
+Newest_Product = "produit le plus récent";
+Top_Selling = "Meilleures ventes";
+Featured_Product = "Produits populaires";
+View_All = "Voir tout";
+Deal_Product = "Produit de l'offre";
+Suggested_Product = "Produit suggéré";
+You_May_Like = "Tu peux aimer";
+Search_Product = "Rechercher un produit";
+No_Product_Found = "Aucun produit trouvé";
+
+Payments = "Paiements";
+Quick_Pay = "Quick Pay";
+Add_Card = "Ajouter une carte";
+Payment_With_Credit = "Paiement par carte de crédit / débit";
+Net_Banking = "net Banking";
+Cash_On_Delivery = "Paiement à la livraison";
+Other_Wallet = "autre Porte-monnaie";
+Payment_Detail = "Détail du paiement";
+Item_Price = "Prix ​​de l'article -";
+Offer = "Offre";
+Shipping_Charges = "Frais d'expédition -";
+Total_Amount = "Montant total -";
+Payment_Method = "Mode de paiement -";
+My_Account = "Mon compte";
+Address_Manager = "Address Manager";
+My_Orders = "Ma commande";
+My_Offers = "Mes offres";
+Quick_Pay_Cards = "Cartes de paiement rapide";
+Help_Center = "Centre d'aide";
+Sign_Out = "Déconnexion";
+Please_Verify_Your_Email_Or_Number = "S'il vous plaît vérifier votre e-mail ou le numéro";
+Get_Newest_offer = "Obtenez le plus récent offre";
+Verify_Now = "Vérifiez maintenant";
+
+Filters = "filtres";
+Categories = "Catégories";
+Price = "prix";
+Brands = "Marques";
+Select_All = "Tout sélectionner";
+Colors = "Couleurs";
+Size = "Taille";
+Discount = "Remise";
+Ratings = "évaluations";
+Done = "Terminé";
+Reset = "Réinitialiser";
+Apply = "Appliquer";
+
+Push_Notification = "Notification push";
+Sms_Notification = "Notification par SMS";
+Email_Notification = "Notification par courriel";
+Language = "Langue";
+
+Account_Deactive = "compte Deactive";
+Return_Items = "Retourner les articles";
+Replace_Items = "remplacer les éléments";
+
+Call_Request = "Demande d'appel";
+Email_Request = "email demande";
+Follow_Us = "Suivez nous sur";
+Terms = "Termes et conditions";
+Privacy = "Politique de confidentialité";
+
+Adderess_Manager = "Adderess Responsable";
+Add_Address = "Ajoutez l'adresse";
+WooBox_Title = "Salut, Nous sommes Woobox";
+WooBox_SubTitle = "Nous faisons autour de votre ville abordable, facile et efficace.";
+Start_Shopping = "Commencez au";
+Check_Availablity = "Vérifiez Availablity";
+Delivery_By = "livraison par";
+
+Rattings = "Rattings";
+Reviews = "Commentaires";
+Rate_Now = "taux immédiat";
+Submit_Review = "Poster le commentaire";
+
+Collection = "collection 2019";
+Next_time_buy = "La prochaine fois acheter";
+Remove = "Retirer";
+Move_to_Cart = "Passer au panier";
+Email = "Email";
+
+More_Info = "Plus d'informations";
+Description = "La description";
+Buy_Now = "Acheter maintenant";
+Add_Cart = "Ajouter au chariot";
+Remove_Cart = "Supprimer le panier";
+
+Order_Summary = "Récapitulatif de la commande";
+Change_Address = "Changement d'adresse";
+See_Price_Detail = "Voir le détail des prix";
+Continue = "Continuer";
+Add_New_Address = "Ajouter une nouvelle adresse";
+Item_Deliver_Here = "Item livrer ici";
+Shopping_Detail = "Détail du shopping";
+Order_Id = "Numéro de commande -";
+Order_date = "Date de commande -";
+Offers = "Des offres -";
+Edit_Address = "Modifier l'adresse";
+Use_Current_Location = "Utiliser la position actuelle";
+Full_Name = "Nom complet";
+PinCode = "Code PIN";
+City = "Ville";
+State = "Etat";
+Country = "Pays";
+Address = "Adresse 1";
+Address2 = "Adresse 2";
+Address_Type = "Type d'adresse";
+Phone_Number = "Numéro de téléphone";
+Save_Address = "Adresse Enregistrer";
+My_Cart = "mon panier";
+Add_Product = "Produit ajouté au panier avec succès ...";
+Remove_Product = "Produit retiré du panier avec succès ...";
+Add_to_Cart = "Ajouter au chariot";
+Remove_Cart = "Supprimer panier";
+My_Rewards = "Mes récompenses";
+Rewards_Msg = "Il existe de nombreuses variantes de Lorem Ipsum disponibles, mais themajority ont subi une modification.";
+Invite_Now = "Inviter maintenant";
+Hours = "Heure";
+Mintues = "min";
+Seconds = "Seconde";
+Submit = "Soumettre";
+Card_Number = "Numéro de carte";
+Cvv = "CVV";
+Card_Holder_Name = "Nom du titulaire";
+Selected_Year = "Sélectionner l'année";
+Selected_Month = "Sélectionnez un mois";
+Add_New_Card = "Ajouter une nouvelle carte";
+Save_Profile = "Enregistrer le profil";
+Account_Deactive = "compte Deactive";
+Edit_Profile = "Editer le profil";
+Male = "Masculin";
+Female = "Femme";
+Other = "Autre";
+New_Arrivle = "Nouvelle arrivee";
+Dark_Mode = "obscurcissement";
+Multiple_Dashboard = "Tableau de bord multiples";

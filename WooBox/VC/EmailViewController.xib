@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailViewController" customModule="Dressly" customModuleProvider="target">
+            <connections>
+                <outlet property="constraintHeaderTop" destination="iht-c3-nI1" id="Xuf-1S-8NB"/>
+                <outlet property="lblCount" destination="2Z3-TB-fqc" id="B8C-Ez-Nsr"/>
+                <outlet property="lblHeaderTitle" destination="ruK-xZ-Rfa" id="haD-vz-upc"/>
+                <outlet property="txtDesc" destination="jMZ-LU-Gf6" id="eVR-C2-qdd"/>
+                <outlet property="txtEmail" destination="BRo-bi-aqI" id="dFO-Uy-7iv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ThemeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbu-ah-m1n" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="56" width="320" height="424"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y84-LA-2YP">
+                            <rect key="frame" x="8" y="8" width="304" height="110"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email to WooBox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCu-Ee-jV7" customClass="ThemeLabel">
+                                    <rect key="frame" x="16" y="16" width="272" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BRo-bi-aqI" customClass="ThemeTextField">
+                                    <rect key="frame" x="16" y="53" width="272" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Y1y-ZN-HyT">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                        </constraint>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbM-xj-yR2">
+                                    <rect key="frame" x="16" y="93" width="272" height="1"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="mXi-V7-9sW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="BRo-bi-aqI" firstAttribute="leading" secondItem="y84-LA-2YP" secondAttribute="leading" constant="16" id="38U-rg-3zt">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="nbM-xj-yR2" secondAttribute="trailing" constant="16" id="JzM-jj-Xm2"/>
+                                <constraint firstItem="nbM-xj-yR2" firstAttribute="leading" secondItem="y84-LA-2YP" secondAttribute="leading" constant="16" id="L5y-Yg-gcs"/>
+                                <constraint firstAttribute="trailing" secondItem="dCu-Ee-jV7" secondAttribute="trailing" constant="16" id="O6R-fd-vBS">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstAttribute="bottom" secondItem="nbM-xj-yR2" secondAttribute="bottom" constant="16" id="Ons-v4-Wmi"/>
+                                <constraint firstItem="dCu-Ee-jV7" firstAttribute="top" secondItem="y84-LA-2YP" secondAttribute="top" constant="16" id="UoQ-bQ-OSA">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="dCu-Ee-jV7" firstAttribute="leading" secondItem="y84-LA-2YP" secondAttribute="leading" constant="16" id="es5-r3-NVk">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="BRo-bi-aqI" firstAttribute="top" secondItem="dCu-Ee-jV7" secondAttribute="bottom" constant="16" id="foq-R5-hfc">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="BRo-bi-aqI" secondAttribute="trailing" constant="16" id="lIz-jT-edE">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="nbM-xj-yR2" firstAttribute="top" secondItem="BRo-bi-aqI" secondAttribute="bottom" id="mfz-Xp-KFv"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUo-KH-dUr">
+                            <rect key="frame" x="8" y="118" width="304" height="148"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxi-dg-mAO" customClass="ThemeLabel">
+                                    <rect key="frame" x="16" y="16" width="272" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="9"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jMZ-LU-Gf6">
+                                    <rect key="frame" x="16" y="53" width="272" height="70"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="Gkc-we-Lm5">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                        </constraint>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYs-wn-VA5">
+                                    <rect key="frame" x="16" y="131" width="272" height="1"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="mON-6m-YuG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="cYs-wn-VA5" firstAttribute="top" secondItem="jMZ-LU-Gf6" secondAttribute="bottom" constant="8" id="5UJ-0O-39e"/>
+                                <constraint firstAttribute="bottom" secondItem="cYs-wn-VA5" secondAttribute="bottom" constant="16" id="CP9-bo-z3N"/>
+                                <constraint firstAttribute="trailing" secondItem="jMZ-LU-Gf6" secondAttribute="trailing" constant="16" id="GCH-NT-FLL">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="jMZ-LU-Gf6" firstAttribute="leading" secondItem="vUo-KH-dUr" secondAttribute="leading" constant="16" id="Iva-MH-O9z">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="Nxi-dg-mAO" firstAttribute="leading" secondItem="vUo-KH-dUr" secondAttribute="leading" constant="16" id="PQJ-7f-h2F">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="jMZ-LU-Gf6" firstAttribute="top" secondItem="Nxi-dg-mAO" secondAttribute="bottom" constant="16" id="TrP-mt-Uz9">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="Nxi-dg-mAO" firstAttribute="top" secondItem="vUo-KH-dUr" secondAttribute="top" constant="16" id="W8Y-oI-DsL">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="cYs-wn-VA5" secondAttribute="trailing" constant="16" id="f9Y-fs-OMg"/>
+                                <constraint firstAttribute="trailing" secondItem="Nxi-dg-mAO" secondAttribute="trailing" constant="16" id="iOv-Bw-7m5">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                                </constraint>
+                                <constraint firstItem="cYs-wn-VA5" firstAttribute="leading" secondItem="vUo-KH-dUr" secondAttribute="leading" constant="16" id="kT0-3R-fUY"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7Z-zX-QHO" customClass="ThemeButton">
+                            <rect key="frame" x="16" y="282" width="288" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MYH-WT-ubC">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" title="Send Mail"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnSent_Mail:" destination="-1" eventType="touchUpInside" id="cDR-1i-TzO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="w7Z-zX-QHO" firstAttribute="top" secondItem="vUo-KH-dUr" secondAttribute="bottom" constant="16" id="FIm-Ib-Xkk">
+                            <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                        </constraint>
+                        <constraint firstItem="w7Z-zX-QHO" firstAttribute="leading" secondItem="Wbu-ah-m1n" secondAttribute="leading" constant="16" id="Pni-47-sNE">
+                            <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                        </constraint>
+                        <constraint firstItem="vUo-KH-dUr" firstAttribute="leading" secondItem="Wbu-ah-m1n" secondAttribute="leading" constant="8" id="QyJ-Mz-E4P"/>
+                        <constraint firstAttribute="trailing" secondItem="y84-LA-2YP" secondAttribute="trailing" constant="8" id="bwt-LJ-pnd"/>
+                        <constraint firstAttribute="trailing" secondItem="w7Z-zX-QHO" secondAttribute="trailing" constant="16" id="gON-PX-TKG">
+                            <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="vUo-KH-dUr" secondAttribute="trailing" constant="8" id="hPX-FN-hAb"/>
+                        <constraint firstItem="y84-LA-2YP" firstAttribute="top" secondItem="Wbu-ah-m1n" secondAttribute="top" constant="8" id="i29-LI-1yI"/>
+                        <constraint firstItem="vUo-KH-dUr" firstAttribute="top" secondItem="y84-LA-2YP" secondAttribute="bottom" id="rxF-ks-aE4"/>
+                        <constraint firstItem="y84-LA-2YP" firstAttribute="leading" secondItem="Wbu-ah-m1n" secondAttribute="leading" constant="8" id="yRC-5q-YyQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTB-NV-pEu" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb5-NG-le5" customClass="ThemeButton">
+                            <rect key="frame" x="4" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="e7i-NF-cIn"/>
+                                <constraint firstAttribute="width" constant="40" id="zow-EJ-aqr"/>
+                            </constraints>
+                            <state key="normal" image="icoBack"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnBack_Clicked:" destination="-1" eventType="touchUpInside" id="QQV-Eq-LET"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruK-xZ-Rfa" customClass="ThemeLabel">
+                            <rect key="frame" x="138.5" y="17.5" width="43.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2t-9g-dFo" customClass="ThemeButton">
+                            <rect key="frame" x="264" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="ZKU-7v-d19"/>
+                                <constraint firstAttribute="height" constant="40" id="rTN-ZP-Xge"/>
+                            </constraints>
+                            <state key="normal" image="icoShoppingCart"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnCart_Clicked:" destination="-1" eventType="touchUpInside" id="N2v-C2-bGn"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z3-TB-fqc">
+                            <rect key="frame" x="284" y="8" width="20" height="20"/>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.25882352939999997" blue="0.32549019610000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="4UZ-p1-B7f"/>
+                                <constraint firstAttribute="width" constant="20" id="fEJ-vl-s4A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.25882352939999997" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ruK-xZ-Rfa" firstAttribute="centerY" secondItem="mTB-NV-pEu" secondAttribute="centerY" id="8VS-eY-Lgr"/>
+                        <constraint firstAttribute="height" constant="56" id="B2F-iN-sHv">
+                            <variation key="heightClass=regular-widthClass=regular" constant="66"/>
+                        </constraint>
+                        <constraint firstItem="ruK-xZ-Rfa" firstAttribute="centerX" secondItem="mTB-NV-pEu" secondAttribute="centerX" id="E9D-45-FKU"/>
+                        <constraint firstItem="2Z3-TB-fqc" firstAttribute="top" secondItem="o2t-9g-dFo" secondAttribute="top" id="GDf-HZ-iri"/>
+                        <constraint firstItem="o2t-9g-dFo" firstAttribute="centerY" secondItem="mTB-NV-pEu" secondAttribute="centerY" id="P94-hA-kD0"/>
+                        <constraint firstItem="Gb5-NG-le5" firstAttribute="centerY" secondItem="mTB-NV-pEu" secondAttribute="centerY" id="bf5-qE-6S9"/>
+                        <constraint firstItem="Gb5-NG-le5" firstAttribute="leading" secondItem="mTB-NV-pEu" secondAttribute="leading" constant="4" id="e9M-6X-yCR"/>
+                        <constraint firstItem="2Z3-TB-fqc" firstAttribute="trailing" secondItem="o2t-9g-dFo" secondAttribute="trailing" id="fff-HX-OUV"/>
+                        <constraint firstAttribute="trailing" secondItem="o2t-9g-dFo" secondAttribute="trailing" constant="16" id="ucW-dw-sbS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wbu-ah-m1n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Wz-DV-aIu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Wbu-ah-m1n" secondAttribute="bottom" id="MRt-jE-sQm"/>
+                <constraint firstItem="mTB-NV-pEu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gBm-K9-RfT"/>
+                <constraint firstItem="mTB-NV-pEu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iht-c3-nI1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wbu-ah-m1n" secondAttribute="trailing" id="nR8-XO-SFd"/>
+                <constraint firstItem="Wbu-ah-m1n" firstAttribute="top" secondItem="mTB-NV-pEu" secondAttribute="bottom" id="nyp-U8-xaC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mTB-NV-pEu" secondAttribute="trailing" id="tri-bs-Wtv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="129.375" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icoBack" width="40" height="40"/>
+        <image name="icoShoppingCart" width="20" height="20"/>
+    </resources>
+</document>

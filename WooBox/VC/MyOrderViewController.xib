@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyOrderViewController" customModule="WooBox" customModuleProvider="target">
+            <connections>
+                <outlet property="constraintHeightSafeArea" destination="AVA-VF-YGh" id="I8b-Ui-g5G"/>
+                <outlet property="constraintVwBannerHeight" destination="PqA-rF-HxT" id="Iaj-Ie-S6p"/>
+                <outlet property="cvOrder" destination="9sf-NA-5zJ" id="J2m-1r-Ey8"/>
+                <outlet property="lblHeading" destination="9VM-yy-F2g" id="e8B-es-R9x"/>
+                <outlet property="lblNoOrderFound" destination="zhP-PO-VW9" id="tf7-TE-QSQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBanner" destination="6yE-n5-bRm" id="Lt0-yq-GxI"/>
+                <outlet property="vwHeader" destination="ySO-th-rWG" id="Ifl-yd-dzY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ThemeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JG-BJ-Sdb" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="56" width="320" height="424"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhP-PO-VW9">
+                    <rect key="frame" x="105.5" y="229.5" width="109" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-NA-5zJ">
+                    <rect key="frame" x="0.0" y="56" width="320" height="374"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="24" minimumInteritemSpacing="0.0" id="RY7-Bv-NaW">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="8" minY="16" maxX="8" maxY="16"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MDb-3d-Qnc"/>
+                        <outlet property="delegate" destination="-1" id="CAa-fu-h09"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yE-n5-bRm">
+                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PqA-rF-HxT"/>
+                        <constraint firstAttribute="width" constant="320" id="pGr-OZ-ETN">
+                            <variation key="heightClass=regular-widthClass=regular" constant="468"/>
+                        </constraint>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySO-th-rWG" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHr-tb-NVf" customClass="ThemeButton">
+                            <rect key="frame" x="4" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="0sU-z1-xnv">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="40" id="dvS-RW-hJq">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" image="icoBack"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnBack_Clicked:" destination="-1" eventType="touchUpInside" id="Vc0-hN-0ha"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-yy-F2g" customClass="ThemeLabel">
+                            <rect key="frame" x="120" y="18" width="80.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YHr-tb-NVf" firstAttribute="leading" secondItem="ySO-th-rWG" secondAttribute="leading" constant="4" id="8fr-6U-T3d"/>
+                        <constraint firstItem="9VM-yy-F2g" firstAttribute="centerX" secondItem="ySO-th-rWG" secondAttribute="centerX" id="PA8-Wr-569"/>
+                        <constraint firstAttribute="height" constant="56" id="XR0-Ss-rZd">
+                            <variation key="heightClass=regular-widthClass=regular" constant="66"/>
+                        </constraint>
+                        <constraint firstItem="YHr-tb-NVf" firstAttribute="centerY" secondItem="ySO-th-rWG" secondAttribute="centerY" id="rCz-ZI-N2B"/>
+                        <constraint firstItem="9VM-yy-F2g" firstAttribute="centerY" secondItem="ySO-th-rWG" secondAttribute="centerY" id="zOq-Yr-JBQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ySO-th-rWG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ANa-fS-J1j"/>
+                <constraint firstItem="ySO-th-rWG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AVA-VF-YGh"/>
+                <constraint firstItem="zhP-PO-VW9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EGW-el-oax"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ySO-th-rWG" secondAttribute="trailing" id="J0i-Q0-uKp"/>
+                <constraint firstItem="9sf-NA-5zJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K1L-wx-YKU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3JG-BJ-Sdb" secondAttribute="trailing" id="Qyx-aq-MP0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9sf-NA-5zJ" secondAttribute="trailing" id="SEl-iO-Zif"/>
+                <constraint firstItem="zhP-PO-VW9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Yl0-sX-Eed"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6yE-n5-bRm" secondAttribute="bottom" id="d3M-af-zJK"/>
+                <constraint firstItem="3JG-BJ-Sdb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kBU-p9-YRZ"/>
+                <constraint firstItem="9sf-NA-5zJ" firstAttribute="top" secondItem="ySO-th-rWG" secondAttribute="bottom" id="qAg-aN-mJk"/>
+                <constraint firstItem="6yE-n5-bRm" firstAttribute="top" secondItem="9sf-NA-5zJ" secondAttribute="bottom" id="qPI-Of-rAQ"/>
+                <constraint firstItem="6yE-n5-bRm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wBD-mN-38I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3JG-BJ-Sdb" secondAttribute="bottom" id="wf6-B7-UUQ"/>
+                <constraint firstItem="3JG-BJ-Sdb" firstAttribute="top" secondItem="ySO-th-rWG" secondAttribute="bottom" id="yUt-Ys-afq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="129.375" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icoBack" width="40" height="40"/>
+    </resources>
+</document>

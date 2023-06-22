@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="MultipalDashboardTableCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz6-ns-azo" customClass="ThemeView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NM6-VI-UmM" customClass="ThemeLabel">
+                                <rect key="frame" x="16" y="8" width="260" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WM-rR-sKx">
+                                <rect key="frame" x="284" y="30" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Bw3-jF-yun"/>
+                                    <constraint firstAttribute="width" constant="20" id="Xyp-ju-jd4"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="icoRadioUnchecked"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9WM-rR-sKx" firstAttribute="centerY" secondItem="cz6-ns-azo" secondAttribute="centerY" id="12S-0N-451"/>
+                            <constraint firstAttribute="bottom" secondItem="NM6-VI-UmM" secondAttribute="bottom" constant="8" id="73e-NA-NAD"/>
+                            <constraint firstItem="NM6-VI-UmM" firstAttribute="top" secondItem="cz6-ns-azo" secondAttribute="top" constant="8" id="IQD-rL-x0M"/>
+                            <constraint firstItem="NM6-VI-UmM" firstAttribute="leading" secondItem="cz6-ns-azo" secondAttribute="leading" constant="16" id="bKq-43-dgA"/>
+                            <constraint firstAttribute="trailing" secondItem="9WM-rR-sKx" secondAttribute="trailing" constant="16" id="pdo-tk-sYK"/>
+                            <constraint firstItem="9WM-rR-sKx" firstAttribute="leading" secondItem="NM6-VI-UmM" secondAttribute="trailing" constant="8" id="qAD-4r-dfa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                <integer key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cz6-ns-azo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3ld-U4-Dfa"/>
+                    <constraint firstItem="cz6-ns-azo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="70P-Ga-qlW"/>
+                    <constraint firstAttribute="trailing" secondItem="cz6-ns-azo" secondAttribute="trailing" id="7El-GI-9R4"/>
+                    <constraint firstAttribute="bottom" secondItem="cz6-ns-azo" secondAttribute="bottom" id="I0D-pb-iip"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSelectDashboard" destination="9WM-rR-sKx" id="Guw-Rz-ZHf"/>
+                <outlet property="lblDashboardName" destination="NM6-VI-UmM" id="Lpm-BR-j3j"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icoRadioUnchecked" width="48" height="48"/>
+    </resources>
+</document>

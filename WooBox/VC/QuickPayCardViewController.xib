@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuickPayCardViewController" customModule="WooBox" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAddCard" destination="DqO-RN-4TU" id="2bW-ka-58n"/>
+                <outlet property="constraintHeightArea" destination="SYY-8B-xXs" id="Ulo-vC-cvV"/>
+                <outlet property="constraintVwBannerHeight" destination="JYa-sY-Lg2" id="akQ-uP-TIr"/>
+                <outlet property="lblCount" destination="qsp-Xa-Sdg" id="CoO-BO-F0X"/>
+                <outlet property="lblQuickPay" destination="vK3-B2-LWc" id="p9O-R2-AWh"/>
+                <outlet property="tblCards" destination="04W-bC-i46" id="wOB-8f-HaZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBanner" destination="VLh-sE-sy7" id="Dd8-gH-7b0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ThemeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyC-LD-8vc" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="56" width="320" height="424"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="04W-bC-i46">
+                    <rect key="frame" x="0.0" y="106" width="320" height="324"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="scrollIndicatorInsets" minX="16" minY="16" maxX="16" maxY="16"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4Y6-KN-7Pp"/>
+                        <outlet property="delegate" destination="-1" id="0yw-oz-cYL"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLh-sE-sy7">
+                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JYa-sY-Lg2"/>
+                        <constraint firstAttribute="width" constant="320" id="leP-SN-tnF">
+                            <variation key="heightClass=regular-widthClass=regular" constant="468"/>
+                        </constraint>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4g-LO-LLG">
+                    <rect key="frame" x="0.0" y="56" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK3-B2-LWc" customClass="ThemeLabel">
+                            <rect key="frame" x="16" y="14.5" width="76" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqO-RN-4TU" customClass="ThemeButton">
+                            <rect key="frame" x="204" y="5" width="100" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="LuJ-MR-6kW">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                </constraint>
+                                <constraint firstAttribute="height" constant="40" id="W9t-eg-NTp">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" title="Add Card">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnAddCard_Clicked:" destination="-1" eventType="touchUpInside" id="27H-0E-Zza"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="DqO-RN-4TU" firstAttribute="centerY" secondItem="h4g-LO-LLG" secondAttribute="centerY" id="EWL-Mk-1jC"/>
+                        <constraint firstItem="vK3-B2-LWc" firstAttribute="centerY" secondItem="h4g-LO-LLG" secondAttribute="centerY" id="Q6a-0S-V0k"/>
+                        <constraint firstAttribute="trailing" secondItem="DqO-RN-4TU" secondAttribute="trailing" constant="16" id="Qf2-o9-xjx">
+                            <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                        </constraint>
+                        <constraint firstItem="vK3-B2-LWc" firstAttribute="leading" secondItem="h4g-LO-LLG" secondAttribute="leading" constant="16" id="RDW-uY-MQl">
+                            <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="50" id="he9-3G-Pah"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anm-82-2mI" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGe-ua-xQK" customClass="ThemeButton">
+                            <rect key="frame" x="4" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="6Yc-Uv-05M"/>
+                                <constraint firstAttribute="height" constant="40" id="96m-PG-V9r"/>
+                            </constraints>
+                            <state key="normal" image="icoBack"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnback_Clicked:" destination="-1" eventType="touchUpInside" id="IjR-0J-ooZ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Pay Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCz-1V-NUZ" customClass="ThemeLabel">
+                            <rect key="frame" x="48" y="17.5" width="172" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zd-Nh-s0k" customClass="ThemeButton">
+                            <rect key="frame" x="224" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Cfh-dl-Jqy">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="40" id="Ugc-P0-xUZ">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" image="icoSearch"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnSearch_Clicked:" destination="-1" eventType="touchUpInside" id="WwF-dt-ECh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-cw-vj0" customClass="ThemeButton">
+                            <rect key="frame" x="264" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Mu2-q5-aVW"/>
+                                <constraint firstAttribute="width" constant="40" id="Nsx-S5-mVw"/>
+                            </constraints>
+                            <state key="normal" image="icoShoppingCart"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnMyCartClicked:" destination="-1" eventType="touchUpInside" id="Chx-Fo-dq7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsp-Xa-Sdg">
+                            <rect key="frame" x="284" y="8" width="20" height="20"/>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.25882352939999997" blue="0.32549019610000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="5cr-dU-d6R"/>
+                                <constraint firstAttribute="height" constant="20" id="gTx-vb-tTP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rCz-1V-NUZ" firstAttribute="leading" secondItem="fGe-ua-xQK" secondAttribute="trailing" constant="4" id="8AK-k8-Wce"/>
+                        <constraint firstItem="qsp-Xa-Sdg" firstAttribute="top" secondItem="Bp8-cw-vj0" secondAttribute="top" id="8oz-pd-nrZ"/>
+                        <constraint firstItem="5Zd-Nh-s0k" firstAttribute="leading" secondItem="rCz-1V-NUZ" secondAttribute="trailing" constant="4" id="G1u-0Z-I6E"/>
+                        <constraint firstAttribute="height" constant="56" id="S6H-us-9xU">
+                            <variation key="heightClass=regular-widthClass=regular" constant="66"/>
+                        </constraint>
+                        <constraint firstItem="rCz-1V-NUZ" firstAttribute="centerY" secondItem="anm-82-2mI" secondAttribute="centerY" id="ajV-qm-vch"/>
+                        <constraint firstItem="Bp8-cw-vj0" firstAttribute="centerY" secondItem="anm-82-2mI" secondAttribute="centerY" id="bnl-NX-Rfd"/>
+                        <constraint firstItem="qsp-Xa-Sdg" firstAttribute="trailing" secondItem="Bp8-cw-vj0" secondAttribute="trailing" id="cqN-LN-V8W"/>
+                        <constraint firstItem="Bp8-cw-vj0" firstAttribute="leading" secondItem="5Zd-Nh-s0k" secondAttribute="trailing" id="f5b-kf-Zby"/>
+                        <constraint firstItem="fGe-ua-xQK" firstAttribute="leading" secondItem="anm-82-2mI" secondAttribute="leading" constant="4" id="fuu-kj-Xr2"/>
+                        <constraint firstItem="5Zd-Nh-s0k" firstAttribute="centerY" secondItem="anm-82-2mI" secondAttribute="centerY" id="l3w-UU-51n"/>
+                        <constraint firstAttribute="trailing" secondItem="Bp8-cw-vj0" secondAttribute="trailing" constant="16" id="tNp-Og-aYm"/>
+                        <constraint firstItem="fGe-ua-xQK" firstAttribute="centerY" secondItem="anm-82-2mI" secondAttribute="centerY" id="xJe-fW-W7e"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="04W-bC-i46" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4vx-fF-8Ws"/>
+                <constraint firstItem="h4g-LO-LLG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fxx-4t-KSP"/>
+                <constraint firstItem="04W-bC-i46" firstAttribute="top" secondItem="h4g-LO-LLG" secondAttribute="bottom" id="LNT-OD-A41"/>
+                <constraint firstItem="hyC-LD-8vc" firstAttribute="top" secondItem="anm-82-2mI" secondAttribute="bottom" id="NJL-8u-2p5"/>
+                <constraint firstItem="anm-82-2mI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SYY-8B-xXs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hyC-LD-8vc" secondAttribute="bottom" id="TMU-zs-yEo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hyC-LD-8vc" secondAttribute="trailing" id="UT3-86-nGv"/>
+                <constraint firstItem="VLh-sE-sy7" firstAttribute="top" secondItem="04W-bC-i46" secondAttribute="bottom" id="Uga-6n-7LG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VLh-sE-sy7" secondAttribute="bottom" id="Uo3-hU-hWb"/>
+                <constraint firstItem="VLh-sE-sy7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W2y-3Q-ahB"/>
+                <constraint firstItem="hyC-LD-8vc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ckL-tU-pO9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="anm-82-2mI" secondAttribute="trailing" id="e5H-ZD-F9V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h4g-LO-LLG" secondAttribute="trailing" id="lR8-jb-qkV"/>
+                <constraint firstItem="anm-82-2mI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oQC-cI-phV"/>
+                <constraint firstItem="hyC-LD-8vc" firstAttribute="top" secondItem="h4g-LO-LLG" secondAttribute="top" id="sgj-Kp-42Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="04W-bC-i46" secondAttribute="trailing" id="zD1-7S-ukB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="82.5" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icoBack" width="40" height="40"/>
+        <image name="icoSearch" width="20" height="20"/>
+        <image name="icoShoppingCart" width="20" height="20"/>
+    </resources>
+</document>

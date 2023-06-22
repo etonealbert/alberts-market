@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderCell" id="gTV-IL-0wX" customClass="OrderCollectionViewCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUO-16-uOE" customClass="ThemeView">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="168"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pTg-mc-zyS">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="168"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6k-7p-JU2" customClass="ThemeLabel">
+                                <rect key="frame" x="128" y="8" width="207" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVi-Md-8GS" customClass="ThemeLabel">
+                                <rect key="frame" x="128" y="16" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jG-Sw-Eda" customClass="ThemeLabel">
+                                <rect key="frame" x="132" y="16" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jy5-sR-0Yr">
+                                <rect key="frame" x="120" y="24" width="223" height="144"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoDot" translatesAutoresizingMaskIntoConstraints="NO" id="Vpd-wd-fJh" customClass="ThemeImageView">
+                                        <rect key="frame" x="8" y="8" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="10u-Sg-h0j">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="15" id="mXG-V6-Vfs">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                            </constraint>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DashLine" translatesAutoresizingMaskIntoConstraints="NO" id="P6S-Qu-gHY" customClass="ThemeImageView">
+                                        <rect key="frame" x="15" y="23" width="1" height="98"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="FlO-ke-Peb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icoDot" translatesAutoresizingMaskIntoConstraints="NO" id="Iwt-0a-FSk" customClass="ThemeImageView">
+                                        <rect key="frame" x="8" y="121" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="Bhk-42-Ji4">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="15" id="xqf-Rw-uLn">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                            </constraint>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4g-mm-Dmh" customClass="ThemeLabel">
+                                        <rect key="frame" x="31" y="7" width="37.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUf-qR-1SG">
+                                        <rect key="frame" x="72.5" y="15.5" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.72597514529999996" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZN-gK-XZx">
+                                        <rect key="frame" x="31" y="28" width="0.0" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtF-rH-d8a">
+                                        <rect key="frame" x="31" y="117" width="0.0" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zir-2f-ScL">
+                                        <rect key="frame" x="35" y="118" width="0.0" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wtF-rH-d8a" secondAttribute="bottom" constant="4" id="01W-4l-qRM">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                    </constraint>
+                                    <constraint firstItem="Zir-2f-ScL" firstAttribute="centerY" secondItem="Iwt-0a-FSk" secondAttribute="centerY" id="22v-1n-Bmr"/>
+                                    <constraint firstItem="X4g-mm-Dmh" firstAttribute="centerY" secondItem="Vpd-wd-fJh" secondAttribute="centerY" id="2Ad-dR-hXP"/>
+                                    <constraint firstItem="wtF-rH-d8a" firstAttribute="leading" secondItem="Iwt-0a-FSk" secondAttribute="trailing" constant="8" id="5fO-uW-9f4">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                    </constraint>
+                                    <constraint firstItem="wtF-rH-d8a" firstAttribute="top" secondItem="eZN-gK-XZx" secondAttribute="bottom" constant="28" id="6xJ-Cg-7pN"/>
+                                    <constraint firstItem="Vpd-wd-fJh" firstAttribute="top" secondItem="jy5-sR-0Yr" secondAttribute="top" constant="8" id="FKk-QW-vlz">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                    </constraint>
+                                    <constraint firstItem="X4g-mm-Dmh" firstAttribute="leading" secondItem="Vpd-wd-fJh" secondAttribute="trailing" constant="8" id="JOq-Xb-Rmq">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                    </constraint>
+                                    <constraint firstItem="eZN-gK-XZx" firstAttribute="leading" secondItem="X4g-mm-Dmh" secondAttribute="leading" id="Jv7-zu-4ng"/>
+                                    <constraint firstItem="Vpd-wd-fJh" firstAttribute="leading" secondItem="jy5-sR-0Yr" secondAttribute="leading" constant="8" id="K1W-9u-9Zf">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                    </constraint>
+                                    <constraint firstItem="eZN-gK-XZx" firstAttribute="top" secondItem="X4g-mm-Dmh" secondAttribute="bottom" constant="4" id="K5T-fu-b5r">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                    </constraint>
+                                    <constraint firstItem="Iwt-0a-FSk" firstAttribute="top" secondItem="P6S-Qu-gHY" secondAttribute="bottom" id="Q77-WC-37h"/>
+                                    <constraint firstItem="Zir-2f-ScL" firstAttribute="leading" secondItem="wtF-rH-d8a" secondAttribute="trailing" constant="4" id="TLJ-Sx-Vbr">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="Iwt-0a-FSk" secondAttribute="bottom" constant="8" id="ag9-Dc-asv"/>
+                                    <constraint firstItem="Iwt-0a-FSk" firstAttribute="leading" secondItem="jy5-sR-0Yr" secondAttribute="leading" constant="8" id="bSw-7S-JwP">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                                    </constraint>
+                                    <constraint firstItem="Iwt-0a-FSk" firstAttribute="centerX" secondItem="Vpd-wd-fJh" secondAttribute="centerX" id="hh6-T5-IpA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zir-2f-ScL" secondAttribute="bottom" constant="5" id="iuY-XC-Bt0">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                    </constraint>
+                                    <constraint firstItem="IUf-qR-1SG" firstAttribute="centerY" secondItem="Vpd-wd-fJh" secondAttribute="centerY" id="ivn-6e-l5g"/>
+                                    <constraint firstItem="IUf-qR-1SG" firstAttribute="leading" secondItem="X4g-mm-Dmh" secondAttribute="trailing" constant="4" id="mjt-TF-SU3">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                                    </constraint>
+                                    <constraint firstItem="wtF-rH-d8a" firstAttribute="centerY" secondItem="Iwt-0a-FSk" secondAttribute="centerY" id="nVn-on-TI8"/>
+                                    <constraint firstItem="P6S-Qu-gHY" firstAttribute="centerX" secondItem="Vpd-wd-fJh" secondAttribute="centerX" id="nsp-kf-7m4"/>
+                                    <constraint firstItem="P6S-Qu-gHY" firstAttribute="top" secondItem="Vpd-wd-fJh" secondAttribute="bottom" id="oJI-qc-beR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5jG-Sw-Eda" firstAttribute="centerY" secondItem="fVi-Md-8GS" secondAttribute="centerY" id="3Zg-eO-hAI"/>
+                            <constraint firstItem="5jG-Sw-Eda" firstAttribute="top" secondItem="U6k-7p-JU2" secondAttribute="bottom" constant="8" id="5XI-Ak-BU2">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="U6k-7p-JU2" firstAttribute="leading" secondItem="pTg-mc-zyS" secondAttribute="trailing" constant="8" id="7bg-xh-LJ7">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="pTg-mc-zyS" secondAttribute="bottom" id="JDZ-Fp-ftL"/>
+                            <constraint firstAttribute="trailing" secondItem="jy5-sR-0Yr" secondAttribute="trailing" id="KXL-FH-2vV"/>
+                            <constraint firstItem="pTg-mc-zyS" firstAttribute="width" secondItem="LUO-16-uOE" secondAttribute="width" multiplier="0.35" id="Kuk-Id-6ge"/>
+                            <constraint firstItem="fVi-Md-8GS" firstAttribute="top" secondItem="U6k-7p-JU2" secondAttribute="bottom" constant="8" id="LAz-MU-BTk">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="U6k-7p-JU2" secondAttribute="trailing" constant="8" id="Qag-Ul-eKc"/>
+                            <constraint firstItem="jy5-sR-0Yr" firstAttribute="leading" secondItem="pTg-mc-zyS" secondAttribute="trailing" id="TZO-C4-BdW"/>
+                            <constraint firstItem="fVi-Md-8GS" firstAttribute="leading" secondItem="pTg-mc-zyS" secondAttribute="trailing" constant="8" id="YNS-lL-tAC">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="pTg-mc-zyS" firstAttribute="top" secondItem="LUO-16-uOE" secondAttribute="top" id="bLm-aH-J1I"/>
+                            <constraint firstItem="jy5-sR-0Yr" firstAttribute="top" secondItem="5jG-Sw-Eda" secondAttribute="bottom" constant="8" id="bZY-S0-u9H">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="jy5-sR-0Yr" firstAttribute="top" secondItem="fVi-Md-8GS" secondAttribute="bottom" constant="8" id="fL3-hp-UZ2">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="U6k-7p-JU2" firstAttribute="top" secondItem="LUO-16-uOE" secondAttribute="top" constant="8" id="gJD-Xh-9pM">
+                                <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="jy5-sR-0Yr" secondAttribute="bottom" id="pea-X4-O3J"/>
+                            <constraint firstItem="pTg-mc-zyS" firstAttribute="leading" secondItem="LUO-16-uOE" secondAttribute="leading" id="s6a-Ds-zgr"/>
+                            <constraint firstItem="5jG-Sw-Eda" firstAttribute="leading" secondItem="fVi-Md-8GS" secondAttribute="trailing" constant="4" id="vph-d9-eCH">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                <integer key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LUO-16-uOE" secondAttribute="bottom" id="5ez-Kg-zhU"/>
+                <constraint firstItem="LUO-16-uOE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gae-Vg-ckf"/>
+                <constraint firstItem="LUO-16-uOE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Pbw-TM-m5b"/>
+                <constraint firstAttribute="trailing" secondItem="LUO-16-uOE" secondAttribute="trailing" id="c96-3d-Tvs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="343" height="168"/>
+            <connections>
+                <outlet property="imgProduct" destination="pTg-mc-zyS" id="4VQ-45-2oQ"/>
+                <outlet property="lblNewPrice" destination="fVi-Md-8GS" id="vat-vZ-p4k"/>
+                <outlet property="lblOldProductPrice" destination="5jG-Sw-Eda" id="rxG-br-3fM"/>
+                <outlet property="lblOrderStatus" destination="IUf-qR-1SG" id="hy6-uW-2RD"/>
+                <outlet property="lblProductName" destination="U6k-7p-JU2" id="aue-2z-zRs"/>
+                <outlet property="lblStartDate" destination="eZN-gK-XZx" id="szL-mQ-xQO"/>
+                <outlet property="lblStatus" destination="wtF-rH-d8a" id="5UG-J7-7es"/>
+            </connections>
+            <point key="canvasLocation" x="248.4375" y="103.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DashLine" width="3" height="434"/>
+        <image name="icoDot" width="26.5" height="26.5"/>
+    </resources>
+</document>

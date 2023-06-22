@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>654421987855-gn34grvveng7m3b757qngl1pq2odut4m.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.654421987855-gn34grvveng7m3b757qngl1pq2odut4m</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAcm7ktGkTjoXeSqNssa0U_qfr_h2FQYDg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>654421987855</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.iqonic.woobox</string>
+	<key>PROJECT_ID</key>
+	<string>woobox-818b2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>woobox-818b2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:654421987855:ios:5c87bdc248e157a73e097a</string>
+	<key>DATABASE_URL</key>
+	<string>https://woobox-818b2.firebaseio.com</string>
+</dict>
+</plist>

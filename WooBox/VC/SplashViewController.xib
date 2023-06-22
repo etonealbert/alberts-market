@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="WooBox" customModuleProvider="target">
+            <connections>
+                <outlet property="imgLogo" destination="jPM-Mj-h33" id="Hly-jg-O1u"/>
+                <outlet property="lblWooBox" destination="Klh-3d-ca5" id="mhd-sB-XwK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilW-7V-Uqs" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzy-8j-FOP">
+                    <rect key="frame" x="0.0" y="240" width="320" height="240"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="jPM-Mj-h33">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jPM-Mj-h33" secondAttribute="bottom" id="4O4-Yg-aEN"/>
+                        <constraint firstItem="jPM-Mj-h33" firstAttribute="top" secondItem="rzy-8j-FOP" secondAttribute="top" id="6qw-My-1wx"/>
+                        <constraint firstItem="jPM-Mj-h33" firstAttribute="leading" secondItem="rzy-8j-FOP" secondAttribute="leading" id="LCf-X3-Um1"/>
+                        <constraint firstAttribute="trailing" secondItem="jPM-Mj-h33" secondAttribute="trailing" id="iCf-9m-2Op"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBD-Vn-Ws3">
+                    <rect key="frame" x="85" y="161" width="150" height="158"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app icon" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-XA-cZJ">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="3tp-tP-Seh">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="150" id="usc-Oo-4SI">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                </constraint>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klh-3d-ca5" customClass="ThemeLabel">
+                            <rect key="frame" x="0.0" y="158" width="150" height="0.0"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oAH-XA-cZJ" secondAttribute="trailing" id="6b6-Ir-VPf"/>
+                        <constraint firstItem="oAH-XA-cZJ" firstAttribute="top" secondItem="zBD-Vn-Ws3" secondAttribute="top" id="6m6-pb-ed2"/>
+                        <constraint firstAttribute="bottom" secondItem="Klh-3d-ca5" secondAttribute="bottom" id="7IL-QF-rSn"/>
+                        <constraint firstItem="Klh-3d-ca5" firstAttribute="leading" secondItem="zBD-Vn-Ws3" secondAttribute="leading" id="8l1-uL-Vww"/>
+                        <constraint firstItem="oAH-XA-cZJ" firstAttribute="leading" secondItem="zBD-Vn-Ws3" secondAttribute="leading" id="RZO-7x-b9n"/>
+                        <constraint firstItem="Klh-3d-ca5" firstAttribute="top" secondItem="oAH-XA-cZJ" secondAttribute="bottom" constant="8" id="cc8-rr-mw8"/>
+                        <constraint firstAttribute="trailing" secondItem="Klh-3d-ca5" secondAttribute="trailing" id="ylT-b7-ep3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zBD-Vn-Ws3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3RU-Sr-D2H"/>
+                <constraint firstItem="ilW-7V-Uqs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Zt-RR-wTk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rzy-8j-FOP" secondAttribute="bottom" id="8y0-Sb-tcX"/>
+                <constraint firstItem="rzy-8j-FOP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="EjK-zl-O0J"/>
+                <constraint firstAttribute="bottom" secondItem="ilW-7V-Uqs" secondAttribute="bottom" id="JYK-ls-q6V"/>
+                <constraint firstItem="ilW-7V-Uqs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rv5-kT-YiK"/>
+                <constraint firstItem="rzy-8j-FOP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="T4W-ge-chu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ilW-7V-Uqs" secondAttribute="trailing" id="Vbt-M3-nlg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rzy-8j-FOP" secondAttribute="trailing" id="noZ-Yh-pya"/>
+                <constraint firstItem="zBD-Vn-Ws3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vLl-2h-cKp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.25" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1" width="1125" height="1279"/>
+        <image name="app icon" width="512" height="512"/>
+    </resources>
+</document>

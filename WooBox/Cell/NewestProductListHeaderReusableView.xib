@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="U6b-Vx-4bR" customClass="NewestProductListHeaderReusableView" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9u-Ny-DOr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1M-jR-wwM" customClass="ThemeLabel">
+                            <rect key="frame" x="16" y="35" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="9"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRl-Hh-crr">
+                            <rect key="frame" x="232" y="15" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1Oe-PX-EMJ"/>
+                                <constraint firstAttribute="width" constant="40" id="Hs3-wo-IIJ"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="icoGrid"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjK-D0-umu">
+                            <rect key="frame" x="272" y="15" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="h67-Ba-xHU"/>
+                                <constraint firstAttribute="width" constant="40" id="yFu-uV-SXe"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="icoList"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SjK-D0-umu" firstAttribute="leading" secondItem="IRl-Hh-crr" secondAttribute="trailing" id="AEN-dB-6zL"/>
+                        <constraint firstAttribute="trailing" secondItem="SjK-D0-umu" secondAttribute="trailing" constant="8" id="Jkx-NV-V2g">
+                            <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                        </constraint>
+                        <constraint firstItem="SjK-D0-umu" firstAttribute="centerY" secondItem="u9u-Ny-DOr" secondAttribute="centerY" id="RaU-5e-O1a"/>
+                        <constraint firstItem="IRl-Hh-crr" firstAttribute="centerY" secondItem="u9u-Ny-DOr" secondAttribute="centerY" id="Xsz-Kc-7Rx"/>
+                        <constraint firstItem="k1M-jR-wwM" firstAttribute="leading" secondItem="u9u-Ny-DOr" secondAttribute="leading" constant="16" id="Z0u-nf-ln9">
+                            <variation key="heightClass=regular-widthClass=regular" constant="24"/>
+                        </constraint>
+                        <constraint firstItem="k1M-jR-wwM" firstAttribute="centerY" secondItem="u9u-Ny-DOr" secondAttribute="centerY" id="lbE-rJ-oeT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="u9u-Ny-DOr" secondAttribute="trailing" id="PjN-zG-bD1"/>
+                <constraint firstItem="u9u-Ny-DOr" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="Ucd-EC-hyz"/>
+                <constraint firstAttribute="bottom" secondItem="u9u-Ny-DOr" secondAttribute="bottom" id="a4B-Be-VoM"/>
+                <constraint firstItem="u9u-Ny-DOr" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="nvo-Rr-YBc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="btnGrid" destination="IRl-Hh-crr" id="qBT-BT-jie"/>
+                <outlet property="btnList" destination="SjK-D0-umu" id="0N0-W3-7ye"/>
+                <outlet property="lblCollection2019" destination="k1M-jR-wwM" id="ytu-xA-w8A"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="143.97321428571428"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icoGrid" width="125" height="125"/>
+        <image name="icoList" width="125" height="125"/>
+    </resources>
+</document>

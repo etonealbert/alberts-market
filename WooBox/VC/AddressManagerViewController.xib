@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressManagerViewController" customModule="WooBox" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAddAddress" destination="nLl-60-Nea" id="NSc-nA-AQ3"/>
+                <outlet property="constraintHeightArea" destination="nY0-bV-mD9" id="349-Ud-zTu"/>
+                <outlet property="constraintVwBannerHeight" destination="SJx-qE-Xl0" id="Uwx-sk-luL"/>
+                <outlet property="lblHeader" destination="EYu-Q9-Z2m" id="cw0-s1-Bt0"/>
+                <outlet property="lblNoAddressFound" destination="814-m7-8wz" id="Jdw-E8-GXT"/>
+                <outlet property="tblAddress" destination="f17-kV-Uj7" id="aCD-xY-qWe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBanner" destination="cwu-ew-qx5" id="LKM-De-FBK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ThemeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EZ-lN-Llt" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="56" width="320" height="424"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No address found." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="814-m7-8wz">
+                    <rect key="frame" x="89.5" y="229.5" width="141" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f17-kV-Uj7">
+                    <rect key="frame" x="0.0" y="56" width="320" height="308"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8Vs-u7-qSj"/>
+                        <outlet property="delegate" destination="-1" id="uJW-Sv-eP6"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02S-x6-e91" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxh-f2-GAt" customClass="ThemeButton">
+                            <rect key="frame" x="4" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="24y-fZ-2Up">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                                <constraint firstAttribute="height" constant="40" id="Gla-3V-qrt">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" image="icoBack"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnBack_Clicked:" destination="-1" eventType="touchUpInside" id="Agm-L5-GtD"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYu-Q9-Z2m" customClass="ThemeLabel">
+                            <rect key="frame" x="87.5" y="17.5" width="145" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.25882352939999997" blue="0.32549019610000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="EYu-Q9-Z2m" firstAttribute="centerY" secondItem="02S-x6-e91" secondAttribute="centerY" id="EOc-pF-6oC"/>
+                        <constraint firstItem="EYu-Q9-Z2m" firstAttribute="centerX" secondItem="02S-x6-e91" secondAttribute="centerX" id="F92-g4-SRL"/>
+                        <constraint firstAttribute="height" constant="56" id="Giu-Dd-He3">
+                            <variation key="heightClass=regular-widthClass=regular" constant="66"/>
+                        </constraint>
+                        <constraint firstItem="Bxh-f2-GAt" firstAttribute="leading" secondItem="02S-x6-e91" secondAttribute="leading" constant="4" id="vpJ-ml-SCY"/>
+                        <constraint firstItem="Bxh-f2-GAt" firstAttribute="centerY" secondItem="02S-x6-e91" secondAttribute="centerY" id="w7k-4q-7eS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLl-60-Nea" customClass="ThemeButton">
+                    <rect key="frame" x="16" y="364" width="288" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="906-X5-WYr">
+                            <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" title="Add Address"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnAddAddress_Clicked:" destination="-1" eventType="touchUpInside" id="BXA-04-tjz"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwu-ew-qx5">
+                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SJx-qE-Xl0"/>
+                        <constraint firstAttribute="width" constant="320" id="kmH-BF-eHv">
+                            <variation key="heightClass=regular-widthClass=regular" constant="468"/>
+                        </constraint>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="02S-x6-e91" secondAttribute="trailing" id="27I-a0-miK"/>
+                <constraint firstItem="7EZ-lN-Llt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2fK-LC-m7r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7EZ-lN-Llt" secondAttribute="bottom" id="42c-5d-T8D"/>
+                <constraint firstItem="nLl-60-Nea" firstAttribute="top" secondItem="f17-kV-Uj7" secondAttribute="bottom" id="7v2-gf-If0"/>
+                <constraint firstItem="nLl-60-Nea" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="99b-fQ-foQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nLl-60-Nea" secondAttribute="trailing" constant="16" id="9zo-HX-zdx"/>
+                <constraint firstItem="f17-kV-Uj7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FNc-ox-HVW"/>
+                <constraint firstItem="cwu-ew-qx5" firstAttribute="top" secondItem="nLl-60-Nea" secondAttribute="bottom" constant="16" id="Jxh-jJ-eRz"/>
+                <constraint firstItem="814-m7-8wz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KRy-5P-hE5"/>
+                <constraint firstItem="f17-kV-Uj7" firstAttribute="top" secondItem="02S-x6-e91" secondAttribute="bottom" id="M7a-e9-qGo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7EZ-lN-Llt" secondAttribute="trailing" id="Q6e-ZT-MAw"/>
+                <constraint firstItem="f17-kV-Uj7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XxV-Ge-JUp"/>
+                <constraint firstItem="7EZ-lN-Llt" firstAttribute="top" secondItem="02S-x6-e91" secondAttribute="bottom" id="ZqF-gh-rya"/>
+                <constraint firstItem="cwu-ew-qx5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mkK-qV-xD5"/>
+                <constraint firstItem="02S-x6-e91" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nHz-2w-ji3"/>
+                <constraint firstItem="02S-x6-e91" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nY0-bV-mD9"/>
+                <constraint firstItem="814-m7-8wz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nmy-lI-wdr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cwu-ew-qx5" secondAttribute="bottom" id="rKX-yp-ldp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="129.375" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icoBack" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,231 @@
+/* 
+  WooBoxLocalization.strings
+*/
+
+Home = "Home";
+Wishlist = "Wishlist";
+Shooping_Cart = "Shooping Cart";
+Profile = "Profile";
+
+//Sign in
+WooBox = "WooBox";
+Sign_In_With = "Sign In With";
+Change_Password = "Change Password";
+Change_Now = "Change Now";
+Resend_code = "Resend Code";
+Sign_In = "Sign In";
+Sign_Up = "Sign Up";
+Forgot = "Forgot ?";
+Enter_Email = "Enter your Email";
+Enter_Password = "Enter your Password";
+Enter_First_Name = "Enter your First Name";
+Enter_Last_Name = "Enter your Lase Name";
+Enter_Re_Password = "Enter Re-Password";
+Enter_Email_Username = "Enter your Email ID / Username";
+
+//OTP
+Verify_Email = "Enter the Code to verify Your Email";
+Mail_With_Verification_Code = "We have sent you mail with verification code to-";
+Verify = "Verify";
+
+//Side Menu
+My_Order = "My Order";
+Reward = "Reward";
+Women = "Women";
+Men = "Men";
+Kids = "Kids";
+Sports = "Sports";
+Camera = "Camera";
+Account = "Account";
+Settings = "Settings";
+FAQ = "FAQ";
+Help = "Help";
+Contact_Us = "Contact us";
+About_Us = "About us";
+Blog = "Blog";
+Logout = "Logout";
+Login = "Login";
+Special_Offer = "Special Offer";
+Share_app = "Share App";
+
+// Home View
+Recent_Search = "Recent Search";
+Newest_Product = "Newest Product";
+Top_Selling = "Top Selling";
+Featured_Product = "Featured Products";
+View_All = "View All";
+Deal_Product = "Deal Product";
+Suggested_Product = "Suggested Product";
+You_May_Like = "You May Like";
+Search_Product = "Search Product";
+No_Product_Found = "No Product Found";
+
+// Payments
+Payments = "Payments";
+Quick_Pay = "Quick Pay";
+Add_Card = "Add Card";
+Payment_With_Credit/Debit_Card = "Payment With Credit/Debit Card";
+Net_Banking = "Net Banking";
+Cash_On_Delivery = "Cash On Delivery";
+Other_Wallet = "Other Wallet";
+Payment_Detail = "Payment Detail";
+Item_Price = "Item Price -";
+Offer = "Offer";
+Shipping_Charges = "Shipping Charges -";
+Total_Amount = "Total Amount -";
+Payment_Method = "Payment Method -";
+
+// Account
+My_Account = "My Account";
+Address_Manager = "Address Manager";
+My_Orders = "My Order";
+My_Offers = "My Offers";
+Quick_Pay_Cards = "Quick Pay Cards";
+Help_Center = "Help Center";
+Sign_Out = "Sign Out";
+Please_Verify_Your_Email_Or_Number = "Please verify your email Or number";
+Get_Newest_offer = "Get newest offer";
+Verify_Now = "Verify now";
+
+//Filter
+Filters = "Filters";
+Categories = "Categories";
+Price = "price";
+Brands = "Brands";
+Select_All = "Select All";
+Colors = "Colors";
+Size = "Size";
+Discount = "Discount";
+Ratings = "Ratings";
+Done = "Done";
+Reset = "Reset";
+Apply = "Apply";
+
+//Settings
+Push_Notification = "Push Notification";
+Sms_Notification = "SMS Notification";
+Email_Notification = "Email Notification";
+Language = "Language";
+
+////FAQ
+Account_Deactive = "Account Deactive";
+Return_Items = "Return items";
+Replace_Items = "Replace items";
+
+//Contact Us
+Call_Request = "Call Request";
+Email_Request = "Email Request";
+Follow_Us = "Follow us at";
+Terms = "Terms & Condition";
+Privacy = "Privacy Policy";
+
+// Adderess Manager
+Adderess_Manager = "Adderess Manager";
+Add_Address = "Add Address";
+
+// Walk Through
+WooBox_Title = "Hi, We're Woobox";
+WooBox_SubTitle = "We make around your city Affordable, easy and efficient.";
+Start_Shopping = "Start to Shopping";
+
+// Description View
+Check_Availablity = "Check Availablity";
+Delivery_By = "Delivery By";
+
+// Review View
+Rattings = "Rattings";
+Reviews = "Reviews";
+Rate_Now = "Rate Now";
+Submit_Review = "Submit Review";
+
+// Newest Product List Header Reuseable
+Collection = "Collection 2019";
+
+// CartView Cell
+Next_time_buy = "Next time buy";
+Remove = "Remove";
+
+// WishList Cell
+Move_to_Cart = "Move to Cart";
+
+// Email View Controller
+Email = "Email";
+
+// Item Detail View Controller
+More_Info = "More Info";
+Description = "Description";
+Buy_Now = "Buy Now";
+Add_Cart = "Add to Cart";
+Remove_Cart = "Remove cart";
+
+// Order Summary View Controller
+Order_Summary = "Order Summary";
+Change_Address = "Change Address";
+See_Price_Detail = "See price detail";
+Continue = "Continue";
+Add_New_Address = "Add New Address";
+Item_Deliver_Here = "Item Deliver Here";
+
+// Order Detail View Controller
+Shopping_Detail = "Shopping Detail";
+Order_Id = "Order ID -";
+Order_date = "Order Date -";
+Offers = "Offers -";
+
+// Edit / Add New Address View Controller
+Edit_Address = "Edit Address";
+Use_Current_Location = "Use Current Location";
+Full_Name = "Full Name";
+PinCode = "Pincode";
+City = "City";
+State = "State";
+Country = "Country";
+Address = "Address 1";
+Address2 = "Address 2";
+Address_Type = "Address Type";
+Phone_Number = "Phone Number";
+Save_Address = "Save Address";
+
+//My Cart View Controller
+My_Cart = "My Cart";
+Add_Product = "Product added to the cart successfully...";
+Remove_Product = "Product removed from the cart successfully...";
+Add_to_Cart = "Add to cart";
+Remove_Cart = "Remove cart";
+
+// My Rewards View Controller
+My_Rewards = "My Rewards";
+Rewards_Msg = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.";
+Invite_Now = "Invite Now";
+
+// Offer View Controller
+Hours = "Hr";
+Mintues = "Min";
+Seconds = "Sec";
+
+//Help View Controller
+Submit = "Submit";
+
+// Debit Card / Card View Controller.
+Card_Number = "Card Number";
+Cvv = "CVV";
+Card_Holder_Name = "Card Holder Name";
+Selected_Year = "Select Year";
+Selected_Month = "Select Month";
+
+// Add New Cards View Controller.
+Add_New_Card = "Add New Card";
+
+// Edit Profile.
+Save_Profile = "Save Profile";
+Account_Deactive = "Account Deactive";
+Edit_Profile = "Edit Profile";
+Male = "Male";
+Female = "Female";
+Other = "Other";
+
+// Sub Categories.
+New_Arrivle = "New Arrival";
+
+Dark_Mode = "Dark mode";
+Multiple_Dashboard = "Multiple dashboard";

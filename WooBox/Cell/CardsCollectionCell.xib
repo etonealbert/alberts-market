@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="gTV-IL-0wX" customClass="CardsCollectionCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tmH-eq-f5O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <color key="backgroundColor" red="1" green="0.38678633427630293" blue="0.002340926811553512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debit Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3k-Jf-H15">
+                        <rect key="frame" x="16" y="16" width="98" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVK Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3P-B1-8vh">
+                        <rect key="frame" x="209" y="16" width="95" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234  4564  1234  6544  2462" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2x5-XA-KRh">
+                        <rect key="frame" x="16" y="95" width="288" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valid 12/22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yO-L0-anR">
+                        <rect key="frame" x="16" y="127" width="71" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnu-Oi-VMd">
+                        <rect key="frame" x="16" y="160" width="89.5" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJK-dt-rkd">
+                        <rect key="frame" x="264" y="144" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="RZH-i8-08H"/>
+                            <constraint firstAttribute="width" constant="40" id="eXn-So-w62"/>
+                        </constraints>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HJK-dt-rkd" secondAttribute="bottom" constant="16" id="0jK-Ph-OLb"/>
+                <constraint firstAttribute="trailing" secondItem="2x5-XA-KRh" secondAttribute="trailing" constant="16" id="6T5-R9-cUd"/>
+                <constraint firstItem="0yO-L0-anR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="9NG-qi-pxq"/>
+                <constraint firstItem="xnu-Oi-VMd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="DHN-ar-dMp"/>
+                <constraint firstAttribute="bottom" secondItem="tmH-eq-f5O" secondAttribute="bottom" id="IMz-gT-xjN"/>
+                <constraint firstItem="tmH-eq-f5O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JGy-yu-2hq"/>
+                <constraint firstAttribute="bottom" secondItem="xnu-Oi-VMd" secondAttribute="bottom" constant="16" id="PWX-X5-sGv"/>
+                <constraint firstAttribute="trailing" secondItem="tmH-eq-f5O" secondAttribute="trailing" id="TWG-CB-vgs"/>
+                <constraint firstItem="J3P-B1-8vh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="TZP-KC-DOI"/>
+                <constraint firstItem="xnu-Oi-VMd" firstAttribute="top" secondItem="0yO-L0-anR" secondAttribute="bottom" constant="16" id="YiM-fN-rmD"/>
+                <constraint firstAttribute="trailing" secondItem="HJK-dt-rkd" secondAttribute="trailing" constant="16" id="c0B-Ag-FY8"/>
+                <constraint firstItem="e3k-Jf-H15" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="c3J-Pf-7aR"/>
+                <constraint firstItem="tmH-eq-f5O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dCe-2L-8z9"/>
+                <constraint firstItem="e3k-Jf-H15" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="evB-27-093"/>
+                <constraint firstItem="2x5-XA-KRh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="frK-H6-P2d"/>
+                <constraint firstItem="0yO-L0-anR" firstAttribute="top" secondItem="2x5-XA-KRh" secondAttribute="bottom" constant="8" id="ol5-ch-h7q"/>
+                <constraint firstAttribute="trailing" secondItem="J3P-B1-8vh" secondAttribute="trailing" constant="16" id="zzH-m2-wu6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="309" height="182"/>
+            <connections>
+                <outlet property="btnDelete" destination="HJK-dt-rkd" id="ANZ-AU-4Wb"/>
+                <outlet property="imgCard" destination="tmH-eq-f5O" id="WGE-PZ-NU3"/>
+                <outlet property="lblBankName" destination="J3P-B1-8vh" id="FNZ-wn-XhV"/>
+                <outlet property="lblCardHolderName" destination="xnu-Oi-VMd" id="HK4-10-Xsw"/>
+                <outlet property="lblCardNumber" destination="2x5-XA-KRh" id="qLG-AT-4dE"/>
+                <outlet property="lblCardType" destination="e3k-Jf-H15" id="3Qo-ZS-y9x"/>
+                <outlet property="lblValidity" destination="0yO-L0-anR" id="slM-5T-9hc"/>
+            </connections>
+            <point key="canvasLocation" x="107.8125" y="181.25"/>
+        </collectionViewCell>
+    </objects>
+</document>

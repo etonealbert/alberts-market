@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiscountCell" rowHeight="69" id="KGk-i7-Jjw" customClass="DiscountTableCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3r-B3-0Yb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lJ-ch-X81">
+                                <rect key="frame" x="8" y="24.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="b7C-p5-K35"/>
+                                    <constraint firstAttribute="height" constant="20" id="j9f-xJ-G4b"/>
+                                </constraints>
+                                <state key="normal" image="icocheckbox"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wci-F4-Iak">
+                                <rect key="frame" x="44" y="8" width="260" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2lJ-ch-X81" firstAttribute="centerY" secondItem="a3r-B3-0Yb" secondAttribute="centerY" id="4ed-ce-jxU"/>
+                            <constraint firstItem="wci-F4-Iak" firstAttribute="leading" secondItem="2lJ-ch-X81" secondAttribute="trailing" constant="16" id="Rcj-GY-g0X"/>
+                            <constraint firstAttribute="trailing" secondItem="wci-F4-Iak" secondAttribute="trailing" constant="16" id="ZpA-hs-qhA"/>
+                            <constraint firstItem="2lJ-ch-X81" firstAttribute="leading" secondItem="a3r-B3-0Yb" secondAttribute="leading" constant="8" id="fTm-cc-2a0"/>
+                            <constraint firstItem="wci-F4-Iak" firstAttribute="top" secondItem="a3r-B3-0Yb" secondAttribute="top" constant="8" id="hie-fU-hFZ"/>
+                            <constraint firstAttribute="bottom" secondItem="wci-F4-Iak" secondAttribute="bottom" constant="8" id="jAo-VW-O58"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="a3r-B3-0Yb" secondAttribute="bottom" id="95u-4O-7Jf"/>
+                    <constraint firstItem="a3r-B3-0Yb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WH4-Us-Ggc"/>
+                    <constraint firstAttribute="trailing" secondItem="a3r-B3-0Yb" secondAttribute="trailing" id="gDF-xH-8SY"/>
+                    <constraint firstItem="a3r-B3-0Yb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mSm-mM-ZKt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSelectDiscount" destination="2lJ-ch-X81" id="kf1-5I-RLN"/>
+                <outlet property="lblDiscount" destination="wci-F4-Iak" id="q5j-FW-SxL"/>
+            </connections>
+            <point key="canvasLocation" x="131.25" y="115.625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icocheckbox" width="40" height="40"/>
+    </resources>
+</document>

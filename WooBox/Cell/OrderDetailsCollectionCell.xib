@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderDetailCell" id="gTV-IL-0wX" customClass="OrderDetailsCollectionCell" customModule="WooBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="263" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AT-HD-Nl8" customClass="ThemeView">
+                        <rect key="frame" x="0.0" y="0.0" width="263" height="115"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tWV-HS-t0j">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="115"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Slim Men T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKL-QG-2Kd" customClass="ThemeLabel">
+                                <rect key="frame" x="96" y="8" width="159" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Sellers - JohnShops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWB-IS-Ncm" customClass="ThemeLabel">
+                                <rect key="frame" x="96" y="36" width="159" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Items -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD4-5q-KK7" customClass="ThemeLabel">
+                                <rect key="frame" x="96" y="62" width="72" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB1-HJ-W3P" customClass="ThemeLabel">
+                                <rect key="frame" x="172" y="62" width="8" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHD-AK-OmD" customClass="ThemeLabel">
+                                <rect key="frame" x="96" y="90.5" width="39" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEe-nh-7YY" customClass="ThemeLabel">
+                                <rect key="frame" x="139" y="86.5" width="35" height="24.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OHD-AK-OmD" firstAttribute="leading" secondItem="tWV-HS-t0j" secondAttribute="trailing" constant="4" id="3hk-9R-IT1">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="FEe-nh-7YY" firstAttribute="top" secondItem="iB1-HJ-W3P" secondAttribute="bottom" constant="4" id="5QE-Pz-krk">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="cWB-IS-Ncm" firstAttribute="top" secondItem="sKL-QG-2Kd" secondAttribute="bottom" constant="8" id="8G2-Kk-zzX">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="iB1-HJ-W3P" firstAttribute="leading" secondItem="bD4-5q-KK7" secondAttribute="trailing" constant="4" id="AFL-Kf-MaZ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="FEe-nh-7YY" firstAttribute="leading" secondItem="OHD-AK-OmD" secondAttribute="trailing" constant="4" id="AaR-Z7-l9B">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="OHD-AK-OmD" firstAttribute="leading" secondItem="tWV-HS-t0j" secondAttribute="trailing" constant="4" id="BcR-j5-ehx"/>
+                            <constraint firstAttribute="bottom" secondItem="FEe-nh-7YY" secondAttribute="bottom" constant="4" id="MNO-OX-8qm">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="iB1-HJ-W3P" firstAttribute="top" secondItem="cWB-IS-Ncm" secondAttribute="bottom" constant="8" id="Tjx-0x-E19">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="tWV-HS-t0j" firstAttribute="leading" secondItem="7AT-HD-Nl8" secondAttribute="leading" id="Xf8-0l-ODG"/>
+                            <constraint firstItem="tWV-HS-t0j" firstAttribute="top" secondItem="7AT-HD-Nl8" secondAttribute="top" id="YBO-Z1-mzM"/>
+                            <constraint firstAttribute="bottom" secondItem="OHD-AK-OmD" secondAttribute="bottom" constant="4" id="dlf-YM-qEw">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="sKL-QG-2Kd" secondAttribute="trailing" constant="8" id="foA-il-yLP"/>
+                            <constraint firstItem="cWB-IS-Ncm" firstAttribute="leading" secondItem="tWV-HS-t0j" secondAttribute="trailing" constant="4" id="gzt-3J-YYM">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="tWV-HS-t0j" secondAttribute="bottom" id="jez-dp-KqV"/>
+                            <constraint firstItem="bD4-5q-KK7" firstAttribute="leading" secondItem="tWV-HS-t0j" secondAttribute="trailing" constant="4" id="mFH-of-9Tl">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="bD4-5q-KK7" firstAttribute="top" secondItem="cWB-IS-Ncm" secondAttribute="bottom" constant="8" id="mJR-VQ-FtZ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="iB1-HJ-W3P" firstAttribute="centerY" secondItem="bD4-5q-KK7" secondAttribute="centerY" id="pBT-bj-qXC"/>
+                            <constraint firstItem="sKL-QG-2Kd" firstAttribute="top" secondItem="7AT-HD-Nl8" secondAttribute="top" constant="8" id="rc3-EJ-0pl">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="tWV-HS-t0j" firstAttribute="width" secondItem="7AT-HD-Nl8" secondAttribute="width" multiplier="0.35" id="uVt-OX-igr"/>
+                            <constraint firstAttribute="trailing" secondItem="cWB-IS-Ncm" secondAttribute="trailing" constant="8" id="wTA-JA-oPC"/>
+                            <constraint firstItem="OHD-AK-OmD" firstAttribute="top" secondItem="bD4-5q-KK7" secondAttribute="bottom" constant="8" id="wTh-Ln-5o1"/>
+                            <constraint firstItem="sKL-QG-2Kd" firstAttribute="leading" secondItem="tWV-HS-t0j" secondAttribute="trailing" constant="4" id="xmB-FA-hHc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                <integer key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7AT-HD-Nl8" secondAttribute="bottom" id="CEJ-Lj-tU2"/>
+                <constraint firstItem="7AT-HD-Nl8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QY3-yY-Xax"/>
+                <constraint firstAttribute="trailing" secondItem="7AT-HD-Nl8" secondAttribute="trailing" id="qdx-N5-efG"/>
+                <constraint firstItem="7AT-HD-Nl8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sM0-d9-8XR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="263" height="117"/>
+            <connections>
+                <outlet property="imgItem" destination="tWV-HS-t0j" id="QXj-l2-v8w"/>
+                <outlet property="lblActualPrice" destination="FEe-nh-7YY" id="5Ty-d6-eV1"/>
+                <outlet property="lblItemName" destination="sKL-QG-2Kd" id="2d7-8B-Xor"/>
+                <outlet property="lblItemSeller" destination="cWB-IS-Ncm" id="d7u-vz-J53"/>
+                <outlet property="lblPrice" destination="OHD-AK-OmD" id="pQH-oW-1RK"/>
+                <outlet property="lblTotalItem" destination="iB1-HJ-W3P" id="ywu-18-ZfM"/>
+            </connections>
+            <point key="canvasLocation" x="257.24637681159425" y="131.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WishListViewController" customModule="WooBox" customModuleProvider="target">
+            <connections>
+                <outlet property="constaintVwHaderHeight" destination="XuK-xM-oME" id="peo-mZ-rcL"/>
+                <outlet property="constraintHeightSafeArea" destination="sYq-9s-0H9" id="kAJ-9e-QaL"/>
+                <outlet property="cvWishList" destination="D6d-ck-dEi" id="oac-WO-aax"/>
+                <outlet property="lblHeading" destination="Dpc-QN-bjJ" id="ck3-zr-jQl"/>
+                <outlet property="lblNoDataFound" destination="D3g-pG-Ain" id="rbj-rd-miX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwHeader" destination="qte-Dj-dMx" id="E40-kH-4aT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ThemeView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXL-IQ-N09" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3g-pG-Ain" customClass="ThemeLabel">
+                            <rect key="frame" x="102.5" y="229.5" width="115" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="D6d-ck-dEi">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fFN-VE-DIO">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="OgA-PU-spX"/>
+                                <outlet property="delegate" destination="-1" id="Nup-gG-hxD"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="D6d-ck-dEi" firstAttribute="leading" secondItem="EXL-IQ-N09" secondAttribute="leading" id="E0N-VM-gS0"/>
+                        <constraint firstItem="D6d-ck-dEi" firstAttribute="top" secondItem="EXL-IQ-N09" secondAttribute="top" id="Jwq-WP-FTf"/>
+                        <constraint firstAttribute="bottom" secondItem="D6d-ck-dEi" secondAttribute="bottom" id="QOM-fL-GI2"/>
+                        <constraint firstItem="D3g-pG-Ain" firstAttribute="centerX" secondItem="EXL-IQ-N09" secondAttribute="centerX" id="jDx-od-ltS"/>
+                        <constraint firstItem="D3g-pG-Ain" firstAttribute="centerY" secondItem="EXL-IQ-N09" secondAttribute="centerY" id="qeO-44-xKZ"/>
+                        <constraint firstAttribute="trailing" secondItem="D6d-ck-dEi" secondAttribute="trailing" id="ydE-jn-fbZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qte-Dj-dMx" customClass="ThemeView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-Tg-GUn" customClass="ThemeButton">
+                            <rect key="frame" x="4" y="-20" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="cA6-ek-heH">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="40" id="l91-6J-D8C">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" image="icoBack"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnBack_Clicked:" destination="-1" eventType="touchUpInside" id="zdy-qy-FL2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WishList" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpc-QN-bjJ" customClass="ThemeLabel">
+                            <rect key="frame" x="124.5" y="-10.5" width="71" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                    <integer key="value" value="0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.25882352939999997" blue="0.32549019610000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="YBi-Tg-GUn" firstAttribute="leading" secondItem="qte-Dj-dMx" secondAttribute="leading" constant="4" id="D5v-0f-EJc"/>
+                        <constraint firstAttribute="height" id="XuK-xM-oME"/>
+                        <constraint firstItem="Dpc-QN-bjJ" firstAttribute="centerX" secondItem="qte-Dj-dMx" secondAttribute="centerX" id="bIn-QM-HhI"/>
+                        <constraint firstItem="YBi-Tg-GUn" firstAttribute="centerY" secondItem="qte-Dj-dMx" secondAttribute="centerY" id="hfA-ZA-a1h"/>
+                        <constraint firstItem="Dpc-QN-bjJ" firstAttribute="centerY" secondItem="qte-Dj-dMx" secondAttribute="centerY" id="xWd-1U-ivL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EXL-IQ-N09" secondAttribute="bottom" id="Dxg-wL-0S1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EXL-IQ-N09" secondAttribute="trailing" id="OT6-uD-Zeb"/>
+                <constraint firstItem="EXL-IQ-N09" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Thh-Zq-oAy"/>
+                <constraint firstItem="qte-Dj-dMx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iWZ-OR-T2e"/>
+                <constraint firstItem="EXL-IQ-N09" firstAttribute="top" secondItem="qte-Dj-dMx" secondAttribute="bottom" id="qFo-nP-0Zw"/>
+                <constraint firstItem="qte-Dj-dMx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sYq-9s-0H9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qte-Dj-dMx" secondAttribute="trailing" id="vF6-py-Vfz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="type">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="129.375" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icoBack" width="40" height="40"/>
+    </resources>
+</document>
